@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left{
+            float: left;
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+        }
+        .right{
+            float: left;
+            border: 1px solid black;
+            background-color: powderblue;
+            height: 300px;
+            width: 300px;
+        }
+        input[type=text]{
+            width: 280px;
+            height: 30px;
+        }
+        input[type=password]{
+            width: 280px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left" style="text-align: center;">
+        <img src="lufy.jpeg" style="height: 300px;width: 300px;;">
+    </div>
+    <div class="right" style="height: 300px;width: 300px;">
+            <form style="text-align: center;">
+                <br><br>
+                <label for="uname">UserName </label> <br> 
+                <input type="text" id="uname" placeholder="Enter UserName"><br><br>
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" placeholder="Enter Password"><br><br>
+                <input type="submit" value="login" style="text-align: center;"><br><br><br><br><br>
+                <input type="checkbox" id="rem">
+                <label for="rem" style="margin-right: 20%;"> Remember me</label>
+                <a href="google.com">forgot password</a>
+              </form>
+    </div>
+    
+</body>
+</html>
