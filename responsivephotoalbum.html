@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        img{
-            width: 200px;
-            height: 200px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <style>
+    .gallery {
+        display: flex;
+
+
+        border-radius: 30px;
+    }
+    .gallery-item img {
+      border-radius: 50px;
+      width: 100%;
+      
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h1>image Gallery</h1>
-    <img src="lufy.jpeg">
-    <img src="lufy.jpeg">
-    <img src="lufy.jpeg">
-    <img src="lufy.jpeg">
-    <img src="lufy.jpeg">
+
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="photos/10.jpg" alt="Image 1">
+  </div>
+  <div class="gallery-item">
+    <img src="photos/9.jpg" alt="Image 2">
+  </div>
+  <div class="gallery-item">
+    <img src="photos/1.jpg" alt="Image 2">
+  </div>
+  </div>
+  <div class="gallery" >
+  <div class="gallery-item">
+    <img src="photos/2.jpg" alt="Image 2">
+  </div>
+  <div class="gallery-item">
+    <img src="photos/3.jpg" alt="Image 2">
+  </div>
+  <div class="gallery-item">
+    <img src="photos/9.jpg" alt="Image 2">
+  </div>
+</div>
+
 </body>
 </html>
