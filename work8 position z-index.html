@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            position: relative;
+        }
+        .first{
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            right: 80px;
+            z-index: 1;
+        }
+        .second{
+            position: absolute;
+            top: 130px;
+            left: 50px;
+            right: 80px;
+            z-index: 2;
+        }
+        .third{
+            position: absolute;
+            top: 450px;
+            left: 50px;
+            z-index: 3;
+        }
+        h2{
+            position: absolute;
+            top: 40px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <h2>Don't do this, Don't you dare, You will not like it.</h2>
+        <div class="first"><img src="waves.jpeg" height="800px" width="600px"></div>
+        <div class="second"><img src="portrait.jpg" height="300px" width="300px"></div>
+        <div class="third"><p>The text is above the because we hanve taken the backgrounnd image </p></div>
+    </div>
+</body>
+</html>
