@@ -8,11 +8,11 @@ int main()
         n=1;
         printf("n = %d",n);
     }
-    if(m==0){
+    else if(m==0){
         n=0;
         printf("n = %d",n);
     }
-    if(m<0){
+     else if(m<0){
         n=-1;
         printf("n = %d",n);
     }
