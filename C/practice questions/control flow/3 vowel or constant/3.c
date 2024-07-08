@@ -11,7 +11,7 @@ int main()
     }
     else
     {
-        printf("%c is not a vowel", ch);
+        printf("%c is a constant", ch);
     }
 
     return 0;
