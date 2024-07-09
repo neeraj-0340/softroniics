@@ -1,19 +1,16 @@
 #include <stdio.h>
+
 int main()
 {
-    int i,j,n,k;
-    printf("Enter number of rows : ");
-    scanf("%d",&n);
-
-    for(i=1;i<=n;i++)
+    int i,j,k,n=5;
+    for(i=0;i<n;i++)
     {
-        for(j=n-i;j<=1;j--)
+        for(j=0;j<i;j++)
         {
-            printf(" ");
+            printf("  ");
         }
-        for(k<=i;k<=1;k--)
-        {
-            printf("* ");
+        for(k=0;k<n-i;k++){
+            printf("*   ");
         }
         printf("\n");
     }
