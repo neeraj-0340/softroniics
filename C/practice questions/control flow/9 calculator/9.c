@@ -1,51 +1,47 @@
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 int main()
 {
-    int a, b, c;
-    printf("Enter 1st number:");
-    scanf("%d", &a);
-    printf("Enter 2nd number:");
-    scanf("%d", &b);
+    int num1, num2, choice;
 
-    do
-    {
-        printf("enter your choice:");
-        printf("1.sum, 2.difference, 3.product, 4.divide?");
-        scanf(" %d ", &c);
+        printf("enter two numbers :");
+        scanf("%d %d",&num1,&num2);
 
-        switch (c)
+        printf("1. add\n");
+        printf("2. subtract\n");
+        printf("3. product\n");
+        printf("4. divide\n");
+        printf("5. exit\n");
+
+        printf("enter you choice");
+        scanf("%d", &choice);
+
+        switch (choice)
         {
         case 1:
-            printf("%d + %d = %d", a, b, a + b);
-            getch();
+            printf("%d + %d = %d\n", num1, num2, num1 + num2);
             break;
 
         case 2:
-            prinf("%d - %d = %d", a, b, a - b);
-            getch();
+            printf("%d - %d = %d\n", num1, num2, num1 - num2);
             break;
 
         case 3:
-            printf("%d * %d = %d", a, b, a * b);
-            getch();
+            printf("%d * %d = %d\n", num1, num2, num1 * num2);
             break;
 
         case 4:
-            printf("%d / %d = %d", a, b, a / b);
-            getch();
+            printf("%d / %d = %d\n", num1, num2, num1 / num2);
             break;
 
         case 5:
-            printf("terminated");
-            getch();
+            exit(0);
             break;
 
         default:
-            printf("invalid command");
+            printf("invalid choice");
             break;
         }
-    } while (c != 5);
-
+    
     return 0;
 }
