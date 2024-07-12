@@ -2,13 +2,13 @@
 int main()
 {
     int i, k, n = 5;
-    for (i = 0; i < n; i++)
-    {
-        for (k = n; k =n-i; k--)
+    
+        for (k = 0; k <= i; k++)
         {
             printf("* ");
+            printf("\n");
         }
-        printf("\n");
-    }
+        
+   
     return 0;
 }
