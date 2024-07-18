@@ -7,7 +7,7 @@ int main()
 
     for(i=1;i<=n;i++){
         for(j=1;j<=10;j++){
-            printf("%d * %d = %d \n",j,i,j*i);
+            printf("%d * %d = %d \n",i,j,j*i);
         }
         printf("\n");
     }

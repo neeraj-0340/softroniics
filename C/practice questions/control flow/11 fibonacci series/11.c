@@ -1,26 +1,20 @@
 #include <stdio.h>
 int main()
 {
-    int n,i, first = 0, second = 1, next;
+    int n, i, first = 0, second = 1, next,count=0;
     printf("Enter the number of terms :");
     scanf("%d", &n);
-
-    for (i=1;i<=n;i++)
+    printf("%d\n%d\n",first,second);
+    count=2;
+    while(count<n)
     {
-        if (n == 0)
-        {
-            printf("%d", first);
-            continue;
-        }
-        if (n == 1)
-        {
-            printf("%d", second);
-            continue;
-        }
+
         next = first + second;
+        count++;
+         printf("%d", next);
         first = second;
         second = next;
 
-        printf("%d,", next);
+       
     }
 }
