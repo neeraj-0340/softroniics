@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -8,11 +9,10 @@ int main()
     printf("Enter a string : ");
     scanf("%s", str);
 
-    while (str[len] != '\0')
-    {
-        len++;
-    }
-    for (i = len; i >= 0; i--)
+    len = strlen(str);
+
+
+    for (i = len; i >=0 ; i--)
     {
         printf("%c", str[i]);
     }
