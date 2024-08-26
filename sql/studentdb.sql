@@ -22,3 +22,6 @@ DELETE FROM students WHERE student_id = 2;
 ALTER TABLE students ADD email VARCHAR(100) NOT NULL;
 SELECT firstname, lastname, major FROM Students WHERE date_of_birth > '2000-01-01';
  SELECT firstname , major  FROM students;
+ drop table students;
+ 
+ 
