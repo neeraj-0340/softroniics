@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arithmatic operations</h1>
+    <input type="number" id="a" placeholder="enter 1st number" />
+    <input type="number" id="b" placeholder="enter 2nd number" />
+    <p id="c"></p>
+
+    <button type="submit" onclick="add()">sum</button>
+    <button type="submit" onclick="dif()">difference</button>
+    <button type="submit" onclick="mul()">multiply</button>
+    <button type="submit" onclick="mod()">mod</button>
+
+    <script>
+      function add() {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var sum = a + b;
+        document.getElementById("c").innerHTML = sum;
+      }
+      function dif() {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var dif = a - b;
+        document.getElementById("c").innerHTML = dif;
+      }
+      function mul() {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var mul = a * b;
+        document.getElementById("c").innerHTML = mul;
+      }
+      function mod() {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var mod = a % b;
+        document.getElementById("c").innerHTML = mod;
+      }
+    </script>
+  </body>
+</html>

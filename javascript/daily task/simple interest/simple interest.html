@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>simple interest</h2>
+    <input type="number" id="p" placeholder="enter principal amount"><br>
+    <input type="number" id="r" placeholder="enter interest rate"><br>
+    <input type="number" id="t" placeholder="enter time"><br>
+    <button type="submit" onclick="simpleinterest()">calculate</button>
+
+    <script>
+        function simpleinterest(){
+            var p=parseFloat(document.getElementById("p").value);
+        var r=parseInt(document.getElementById("r").value);
+        var t=parseInt(document.getElementById("t").value);
+        var sim=(p*r*t)/100;
+        document.getElementById("bank").innerHTML=sim;
+        }
+    </script>
+
+    <p id="bank"></p>
+    
+</body>
+</html>
