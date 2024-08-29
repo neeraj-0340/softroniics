@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="aa"></p>
+    <p id="bb"></p>
+    <script>
+        var a=parseInt(prompt("enter 1st number :"));
+        var b=parseInt(prompt("enter 2nd number :"));
+
+        a=b+a;
+        b=a-b;
+        a=a-b;
+
+        document.getElementById("aa").innerHTML="A="+a;
+        document.getElementById("bb").innerHTML="B="+b;
+        
+    </script>
+    
+</body>
+</html>

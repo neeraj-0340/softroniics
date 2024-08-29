@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="char" placeholder="enter a character" maxlength="1"><br><br>
+    <button type="submit" onclick="isalphabet()">-----------click-----------------</button>
+
+    <script>
+        function isalphabet(){
+            var text=document.getElementById("char").value;
+        var out=(text.match(/[A-Za-z]/))? "it is an alphabet" : "it is not an alphabet";
+        document.getElementById("a").innerHTML=out;
+        }
+    </script>
+
+    <p id="a"></p>
+
+</body>
+</html>
