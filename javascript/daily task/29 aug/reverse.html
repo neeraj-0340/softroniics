@@ -10,12 +10,17 @@
       var a = parseInt(prompt("enter a number :"));
       var b = a.toString();
       var c = b.split("");
-      temp = c[0];
-      c[0] = c[c.length - 1];
-      c[c.length - 1] = temp;
+      for (let i = 0; i <= (c.length)/2; i++) {
+        temp = c[i];
+      c[i] = c[c.length - i-1];
+      c[c.length - i-1] = temp;
+        
+      }
+
       c.join();
 
-      console.log(c);
+      alert(c);
+      //console.log(c);
     </script>
   </body>
 </html>
