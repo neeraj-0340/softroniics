@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        var num=prompt("enter a number or string :");
-        num1 = num.split();
+      var num = prompt("enter a number or string :");
+      num1 = num.split();
 
-        let frq =[];
+      let frq = [];
 
-        for (let i = 0; i < num1.length; i++) {
-            let dig = num1[i];
+      for (let i = 0; i < num1.length; i++) {
+        let dig = num1[i];
 
-            if (frq[dig]) {
-                dig++;
-                
-            } else {
-                dig = 1;
-            }
-
-            
-            
+        if (frq[dig]) {
+          dig++;
+        } else {
+          dig = 1;
         }
+      }
     </script>
-    
-</body>
+  </body>
 </html>
