@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>guess</h1>
+    <script>
+            const target = Math.floor(Math.random() * 10) + 1;
+            console.log(target);
+            
+            let chances = 0;
+            const maxchance = 10;
+
+
+            while (chances < maxchance) {
+                let userinput = parseInt(prompt("enter a number between 1 and 10 :"));
+                let guess = userinput;
+
+                if (isNaN(guess) || guess < 1 || guess > 10) {
+                    alert("invalid");
+                    alert("enter another number");
+                    continue;
+                }
+
+                chances += 1;
+
+                if (guess > target) {
+                    alert("go for a lower value");
+                }
+                else if (guess < target) {
+                    alert("go for a higher");
+                }
+                else if (guess == target) {
+                    alert("u winnnn...!!!");
+                    break
+                }
+
+                if (chances == maxchance) {
+                    alert("max number of chances reached the actual number was");
+                    alert(`${target}`);
+
+
+
+                }
+            }
+        
+    </script>
+
+</body>
+
+</html>
