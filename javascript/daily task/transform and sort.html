@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a"></p>
+    <script>
+        const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 17 },
+  { name: "Charlie", age: 19 },
+  { name: "David", age: 16 },
+  { name: "Eve", age: 30 }
+];
+
+const result=people.filter(person => person.age>=18)
+.sort((a,b)=> b.age - a.age)
+.map(person => `${person.name} is ${person.age} years old`);
+
+document.getElementById("a").innerHTML=result.join('<br>');
+
+    </script>
+    
+</body>
+</html>

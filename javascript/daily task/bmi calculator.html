@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1 style="color: darkslateblue;">Check your BMI...</h1>
+      <p>
+        <form>
+            <label for="h">Enter your height</label>
+            <input type="number" id="h"><br>
+            <label for="w">Enter your weight</label>
+            <input type="number" id="w">
+            <button onclick="calculate()">calculate</button>
+        </form>
+    </p>
+    your bmi is : <p id="a"></p>
+    <script>
+       function calculate(){
+        let weight=parseInt(document.getElementById("w").value);
+        let height=parseInt(document.getElementById("h").value);
+
+        let bmi=weight/((height/100)**2);
+
+        document.getElementById("a").innerHTML=bmi;
+       }
+
+    </script>
+    
+</body>
+</html>
