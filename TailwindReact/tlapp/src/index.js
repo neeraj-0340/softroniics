@@ -12,21 +12,23 @@ import { First } from './First';
 import { Home } from './Home';
 import { Contact } from './Contact';
 import { About } from './About';
+import { Count } from './Count';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <Routes>
-      <Route path="/Home" element={<Home/>}></Route>
+      <Route path="/" element={<Home/>}></Route>
       <Route path="/About" element={<About/>}></Route>
       <Route path="/Contact" element={<Contact/>}></Route>
     </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
    {/* <New/> */}
    {/* <Work1/> */}
    {/* <First/> */}
+   <Count/>
   </React.StrictMode>
 );
 

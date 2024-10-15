@@ -12,7 +12,7 @@ export const Contact = () => {
             About
           </button>
         </Link>
-        <Link to="/Home">
+        <Link to="/">
           <button type="submit" className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md border border-blue-600 hover:bg-blue-600 hover:border-blue-700 transition duration-300">
             Home
           </button>
