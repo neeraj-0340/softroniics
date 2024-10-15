@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Parent } from './Parent';
-import { Mapping } from './Mapping.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import   Bootstrap   from './Bootstrap.jsx';
+import { Cofee } from './Cofee';
+import Abc1 from './Abc1';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Bootstrap/>
+    {/* <Coffee/> */}
+    {/* <Abc1/> */}
   </React.StrictMode>
 );
 
