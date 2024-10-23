@@ -13,22 +13,49 @@ import { Home } from './Home';
 import { Contact } from './Contact';
 import { About } from './About';
 import { Count } from './Count';
+import { Togglebgcolor } from './Togglebgcolor';
+import { Datafetching } from './Datafetching';
+import { APIfetching } from './APIfetching';
+import { Colorswitching } from './Colorswitching';
+import { Axiosfetching } from './Axiosfetching';
+import { Formsubmission } from './Formsubmission.jsx';
+import { Moviedetails } from './Moviedetails.jsx';
+import { Weatherapp } from './Weatherapp.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <BrowserRouter>
+    <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="/About" element={<About/>}></Route>
-      <Route path="/Contact" element={<Contact/>}></Route>
+      <Route path="/Home" element={<Home/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+      <Route path="/register" element={<Register/>}></Route>
+      <Route path="/movie" element={<Formsubmission/>}></Route>
+      <Route path="/moviedet/:imdbID" element={<Moviedetails/>}></Route>
+      <Route path="/new" element={<New/>}></Route>
+      <Route path="/work1" element={<Work1/>}></Route>
+      <Route path="/first" element={<First/>}></Route>
+      <Route path="/count" element={<Count/>}></Route>
+      <Route path="/togglebgcolor" element={<Togglebgcolor/>}></Route>
+      <Route path="/datafetching" element={<Datafetching/>}></Route>
+      <Route path="/APIfetching" element={<APIfetching/>}></Route>
+      <Route path="/colorswitching" element={<Colorswitching/>}></Route>
+      <Route path="/axiosfetching" element={<Axiosfetching/>}></Route>
+      <Route path="/formsubmission" element={<Formsubmission/>}></Route>
+      <Route path="/weather" element={<Weatherapp/>}></Route>
     </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
    {/* <New/> */}
    {/* <Work1/> */}
    {/* <First/> */}
-   <Count/>
+   {/* <Count/> */}
+   {/* <Togglebgcolor/> */}
+   {/* <Datafetching/> */}
+   {/* <APIfetching/> */}
+   {/* <Colorswitching/> */}
+   {/* <Axiosfetching/> */}
+   {/* <Formsubmission/> */}
   </React.StrictMode>
 );
 

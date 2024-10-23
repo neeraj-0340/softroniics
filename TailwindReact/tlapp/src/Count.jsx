@@ -46,9 +46,9 @@ export const Count = () => {
         >
           Add names
         </button>
-        {Datas.map((item) => (
-          <h2 class="font-bold">{item.name}</h2>
-        ))}
+      {Datas.map((item) => (
+        <h2 class="font-bold">{item.name}</h2>
+      ))}
      </div>
       </div>
     </div>
