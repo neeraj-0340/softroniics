@@ -18,9 +18,13 @@ import { Datafetching } from './Datafetching';
 import { APIfetching } from './APIfetching';
 import { Colorswitching } from './Colorswitching';
 import { Axiosfetching } from './Axiosfetching';
-import { Formsubmission } from './Formsubmission.jsx';
 import { Moviedetails } from './Moviedetails.jsx';
 import { Weatherapp } from './Weatherapp.jsx';
+import { Formsubmission } from './Formsubmission.jsx'
+import { Formmm } from './Formmm.jsx';
+import { Keysdata } from './Keysdata.jsx';
+import { Tasktoggle } from './Tasktoggle.jsx';
+import { Main } from './rendering/Main.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -42,8 +46,11 @@ root.render(
       <Route path="/APIfetching" element={<APIfetching/>}></Route>
       <Route path="/colorswitching" element={<Colorswitching/>}></Route>
       <Route path="/axiosfetching" element={<Axiosfetching/>}></Route>
-      <Route path="/formsubmission" element={<Formsubmission/>}></Route>
       <Route path="/weather" element={<Weatherapp/>}></Route>
+      <Route path="/form" element={<Formmm/>}></Route>
+      <Route path="/key" element={<Keysdata/>}></Route>
+      <Route path="/task" element={<Tasktoggle/>}></Route>
+      <Route path="/render" element={<Main/>}></Route>
     </Routes>
     </BrowserRouter>
    {/* <New/> */}
