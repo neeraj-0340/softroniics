@@ -25,6 +25,7 @@ import { Formmm } from './Formmm.jsx';
 import { Keysdata } from './Keysdata.jsx';
 import { Tasktoggle } from './Tasktoggle.jsx';
 import { Main } from './rendering/Main.jsx';
+import { Main1 } from './student management/Mainstd.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -51,6 +52,7 @@ root.render(
       <Route path="/key" element={<Keysdata/>}></Route>
       <Route path="/task" element={<Tasktoggle/>}></Route>
       <Route path="/render" element={<Main/>}></Route>
+      <Route path="/stdrender" element={<Main1/>}></Route>
     </Routes>
     </BrowserRouter>
    {/* <New/> */}
