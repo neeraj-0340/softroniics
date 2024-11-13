@@ -10,9 +10,11 @@ export const Main1 = () => {
   return (
     <div className='bg-gray-500 flex flex-col'>
         <h1>Who are you ...!!!</h1>
+        <div className='flex gap-6 ps-10 pt-10 pb-10'>
         <button onClick={()=>setrole("admin")} className="bg-green-500 ps-2 pe-2 pt-1 pb-1 btn rounded">Admin</button>
         <button onClick={()=>setrole("student")} className="bg-green-500 ps-2 pe-2 pt-1 pb-1 btn rounded">Student</button>
         <button onClick={()=>setrole("guest")} className="bg-green-500 ps-2 pe-2 pt-1 pb-1 btn rounded">Guest</button>
+        </div>
 
         <div className='bg-blue-400'>
         {role==="admin"?(<Admin/>):

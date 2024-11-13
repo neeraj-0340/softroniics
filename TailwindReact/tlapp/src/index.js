@@ -26,11 +26,22 @@ import { Keysdata } from './Keysdata.jsx';
 import { Tasktoggle } from './Tasktoggle.jsx';
 import { Main } from './rendering/Main.jsx';
 import { Main1 } from './student management/Mainstd.jsx';
+import { Newfile } from './Newfile.jsx';
+import { Contextprovider } from './Contextprovider.jsx';
+import { Counterapp } from './Counterapp.jsx';
+import { Calculator } from './Calculator.jsx';
+import Doubt from './Doubt.jsx';
+import { Provider } from 'react-redux';
+import Store from './Store.jsx';
+import Counter from './Counter.jsx';
+import { Flipkart } from './Flipkart.jsx';
+import { Cart } from './Cart.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Provider store={Store}>
     <BrowserRouter>
     <Routes>
       <Route path="/Home" element={<Home/>}></Route>
@@ -47,14 +58,20 @@ root.render(
       <Route path="/APIfetching" element={<APIfetching/>}></Route>
       <Route path="/colorswitching" element={<Colorswitching/>}></Route>
       <Route path="/axiosfetching" element={<Axiosfetching/>}></Route>
-      <Route path="/weather" element={<Weatherapp/>}></Route>
+      <Route path="/weather" element={<Weatherapp/>}></Route> 
       <Route path="/form" element={<Formmm/>}></Route>
       <Route path="/key" element={<Keysdata/>}></Route>
       <Route path="/task" element={<Tasktoggle/>}></Route>
       <Route path="/render" element={<Main/>}></Route>
       <Route path="/stdrender" element={<Main1/>}></Route>
+      <Route path="/context" element={<Newfile/>}></Route>
+      <Route path="/counterapp" element={<Counterapp/>}></Route>
+      <Route path="/calculator" element={<Calculator/>}></Route>
+      <Route path="/flipkart" element={<Flipkart/>}></Route>
+      <Route path="/cart" element={<Cart/>}></Route>
     </Routes>
     </BrowserRouter>
+    </Provider>
    {/* <New/> */}
    {/* <Work1/> */}
    {/* <First/> */}
@@ -65,6 +82,11 @@ root.render(
    {/* <Colorswitching/> */}
    {/* <Axiosfetching/> */}
    {/* <Formsubmission/> */}
+   {/* <Calculator/> */}
+   {/* <Home/> */}
+   {/* <Doubt/> */}
+
+   <Contextprovider><Newfile></Newfile></Contextprovider>
   </React.StrictMode>
 );
 
