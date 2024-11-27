@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const counterslice = createSlice({
-  name: "count",
+  name: "counter",
   initialState:initialState,
   reducers: {
     increment: (state,action) => {
@@ -25,7 +25,7 @@ const counterslice = createSlice({
     },
     add: (state, action) => {
       // Here you get the product ID
-      const { id } = action.payload;
+      const { id } = action.payload;  
       const product = state.data.find((item) => item.id === id);
       
       if (product) {
