@@ -21,7 +21,7 @@ import { Axiosfetching } from './Axiosfetching';
 import { Moviedetails } from './Moviedetails.jsx';
 import { Weatherapp } from './Weatherapp.jsx';
 import { Formsubmission } from './Formsubmission.jsx'
-import { Formmm } from './Formmm.jsx';
+import { Formmm } from './backendconnect/Formmm.jsx';
 import { Keysdata } from './Keysdata.jsx';
 import { Tasktoggle } from './Tasktoggle.jsx';
 import { Main } from './rendering/Main.jsx';
@@ -36,6 +36,8 @@ import Store from './Store.jsx';
 import Counter from './Counter.jsx';
 import { Flipkart } from './Flipkart.jsx';
 import { Cart } from './Cart.jsx';
+import { Formview } from './backendconnect/Formview.jsx';
+import { Formdelete } from './backendconnect/Formdelete.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -60,6 +62,8 @@ root.render(
       <Route path="/axiosfetching" element={<Axiosfetching/>}></Route>
       <Route path="/weather" element={<Weatherapp/>}></Route> 
       <Route path="/form" element={<Formmm/>}></Route>
+      <Route path="/formview" element={<Formview/>}></Route>
+      <Route path="/formdelete/:id" element={<Formdelete/>}></Route>
       <Route path="/key" element={<Keysdata/>}></Route>
       <Route path="/task" element={<Tasktoggle/>}></Route>
       <Route path="/render" element={<Main/>}></Route>
