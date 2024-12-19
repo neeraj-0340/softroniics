@@ -1,4 +1,3 @@
-import { response } from "express";
 import user from "../model/user.js";
 
 
@@ -31,18 +30,18 @@ const login = async (req, res) => {
 
     try {
         // Find the user by email
-        let user = await user.findOne({ email: email });
+        let users = await user.findOne({ email: email });
 
         // Check if user exists
-        if (!user) {
+        if (!users) {
             console.log("User not found");
             return res.status(404).json({ message: "User not found" });
         }
 
-        // Check if password matches
-        if (user.password === password) {
+        // Check if the password matches
+        if (password === users.password) {
             console.log("Login successful");
-            return res.json(user);  // Send the user details as the response
+            return res.json(users); // Send the user details as the response
         } else {
             console.log("Invalid password");
             return res.status(401).json({ message: "Invalid password" });
@@ -53,5 +52,22 @@ const login = async (req, res) => {
     }
 };
 
+const logindetails = async (req,res) => {
+    const id = req.params.id;
+    try {
+        if (!id) {
+            return res.status(400).json({message: "ID is required"});
+        }
+        const userdetails =await user.findById(id);
+        if (!userdetails) {
+            return res.status(400).json({message: "User not found"});
+        }
+        res.json(userdetails);
+    } catch (e) {
+        console.error("Error fetching user details:", e);
+      res.status(500).json({ message: "An error occurred while fetching user details" });
+    }
+}
 
-export { add, view, update,deletedata,login }
+
+export { add, view, update,deletedata,login,logindetails }

@@ -38,6 +38,8 @@ import { Flipkart } from './Flipkart.jsx';
 import { Cart } from './Cart.jsx';
 import { Formview } from './backendconnect/Formview.jsx';
 import { Formdelete } from './backendconnect/Formdelete.jsx';
+import Login1 from './backendconnect/Login1.jsx';
+import { Profile } from './backendconnect/Profile.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -48,6 +50,8 @@ root.render(
     <Routes>
       <Route path="/Home" element={<Home/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
+      <Route path="/login1" element={<Login1/>}></Route>
+      <Route path="/profile" element={<Profile/>}></Route>
       <Route path="/register" element={<Register/>}></Route>
       <Route path="/movie" element={<Formsubmission/>}></Route>
       <Route path="/moviedet/:imdbID" element={<Moviedetails/>}></Route>
