@@ -1,3 +1,4 @@
+import img1 from "../model/img1.js";
 import user from "../model/user.js";
 
 
@@ -50,7 +51,7 @@ const login = async (req, res) => {
         console.error("Error during login:", error);
         return res.status(500).json({ message: "An error occurred during login" });
     }
-};
+}
 
 const logindetails = async (req,res) => {
     const id = req.params.id;
@@ -69,5 +70,28 @@ const logindetails = async (req,res) => {
     }
 }
 
+const addimage = async (req, res) => {
+    try {
+        if (!req.file) {
+            return res.status(400).json({ error: "No file uploaded" });
+        }
 
-export { add, view, update,deletedata,login,logindetails }
+        const imagepath = req.file.path; 
+        console.log("Uploaded File Path:", imagepath);
+
+        const newproduct = new img1({
+            ...req.body,
+            image: imagepath,
+        });
+
+        const saveproduct = await newproduct.save();
+        res.status(201).json(saveproduct);
+    } catch (e) {
+        console.error("Error:", e.message);
+        res.status(500).json({ error: e.message });
+    }
+};
+
+
+
+export { add, view, update,deletedata,login,logindetails,addimage }

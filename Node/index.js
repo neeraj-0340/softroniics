@@ -6,13 +6,14 @@ import cors from 'cors'
 const app = express();
 app.use(express.json());
 app.use(cors())
+app.use('/uploads', express.static('uploads'));
+
 
 
 connectDB()
 app.use('/user', userRouter);
 
 
-app.listen(8002
-    , () => {
+app.listen(8003, () => {
     console.log("running");
 })
