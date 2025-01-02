@@ -52,7 +52,7 @@ export const Login = () => {
                     </div>
                     <div className='text-center underline'>
                         <Link to={"/register"}>
-                            <p>New Here?</p>
+                            <p className='hover:text-purple-600'>New Here?</p>
                         </Link>
                     </div>
                 </form>
