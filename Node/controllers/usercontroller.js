@@ -8,8 +8,6 @@ const add = async (req, res) => {
     let response = await newuser.save()
     res.json(response)
     console.log(response);
-
-
 }
 const view = async (req, res) => {
     let response = await user.find()

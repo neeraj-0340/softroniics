@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const size=parseInt(prompt("enter the size of the array :"));
+
+        if (isNaN(size) || size < 0) {
+            alert("enter a valid array size.");
+        }
+        else{
+            let arr1=prompt("enter array elements seperated by commas.").split(",").map(Number);
+
+
+            if (arr1.length !== size) {
+                alert("array size incorrect");
+            }
+            else{
+                document.write(`before sorting : ${arr1}`);
+                document.write("<br>");
+                let swap=[];
+                for (let i = 0; i < size; i++) {
+                    swap[i]=arr1[arr1.length-i-1]
+                    }
+                    arr1=swap;
+                }
+                document.write(`after sorting : ${arr1}`);
+            }
+    </script>
+    
+</body>
+</html>

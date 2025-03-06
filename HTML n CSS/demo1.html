@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Technologies</title>
+
+    <style>
+    
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        color: #222;
+      }
+
+     
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+       
+      }
+      .links a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+      }
+
+      .links a:hover {
+        color: #007bff; 
+        text-decoration: underline; 
+      }
+
+      .links li {
+        display: inline;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .button {
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+
+      .trust {
+        text-align: left;
+        padding: 50px 80px;
+      }
+
+      .trust h1 {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+
+      .trust p {
+        font-size: 16px;
+        color: #555;
+        max-width: 500px;
+        margin-bottom: 20px;
+      }
+
+      .btnn {
+        display: flex;
+        gap: 15px;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .btns {
+        background: transparent;
+        border: 1px solid black;
+        color: black;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      
+      .trustss {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        
+      }
+
+      .trustss img {
+        width: 50%;
+        border-radius: 10px;
+        padding: 50px 80px;
+      }
+
+      
+      .about {
+        display: flex;
+        padding: 50px 80px;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .about-text {
+        max-width: 600px;
+      }
+      .ab {
+        color: #007bff;
+    
+      }
+
+      .about h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .about p {
+        font-size: 16px;
+        color: #555;
+      }
+
+      .about .know-more {
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: black;
+        margin-top: 15px;
+      }
+
+      .carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.carousel img {
+  flex: 0 0 100%; /* Each image takes the full width of the container */
+  object-fit: cover;
+  animation: slide 12s infinite; /* Total animation duration */
+}
+      .services {
+        padding: 40px;
+        background-color: white;
+      }
+      .services h2 {
+        color: #1d3557;
+        margin-bottom: 10px;
+      }
+      .services p {
+        color: #6c757d;
+        margin: 20px 0;
+      }
+      .servicess {
+        margin-bottom: 20px;
+      }
+      .servicess h3 {
+        color: #1d3557;
+        margin-bottom: 10px;
+      }
+      .service-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .service-content .left {
+        flex: 1;
+        max-width: 50%;
+      }
+      .service-content .right {
+        flex: 1;
+        max-width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-end;
+      }
+      .service-buttons {
+        margin: 20px 0;
+      }
+      .service-buttons button {
+        padding: 10px 20px;
+        border: 2px solid #1d3557;
+        background-color: transparent;
+        color: #1d3557;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+      }
+      .service-buttons button:hover {
+        background-color: #1d3557;
+        color: white;
+      }
+      .service-item {
+        width: calc(45% - 20px);
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .service-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .service-item h3 {
+        font-size: 18px;
+        margin: 10px;
+        color: #1d3557;
+      }
+      .service-item p {
+        font-size: 14px;
+        color: #6c757d;
+        margin: 0 10px 10px;
+      }
+      .timeline {
+        margin: 40px 20px;
+      }
+      .timeline h2 {
+        text-align: center;
+        color: #1d3557;
+      }
+      .timeline-container {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+      }
+      .timeline-item {
+        flex: 0 0 250px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .timeline-item h3 {
+        font-size: 18px;
+        color: #1d3557;
+      }
+      .timeline-item p {
+        font-size: 14px;
+        color: #6c757d;
+      }
+
+      .about {
+            display: flex;
+            padding: 50px 80px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-left {
+            flex: 1;
+        }
+
+        .about-right {
+            flex: 2;
+        }
+
+        .about h3 {
+            font-size: 14px;
+            color: #007bff;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 16px;
+            color: #555;
+            max-width: 600px;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div class="nav">
+      <div class="logo">
+        <img src="cool.jpg" alt="Cool Technologies Logo" />
+      </div>
+      <nav>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="button">LET'S TALK</button>
+    </div>
+
+  
+    
+    <div class="trust">
+      <h1>Your Trusted Partner In <br />Cooling Solution</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the<br />
+        printing and typesetting industry.<br />
+        Lorem Ipsum is simply dummy text of the<br />
+        printing and typesetting industry.
+      </p>
+      <div class="btnn">
+        <button class="btn">LET'S TALK</button>
+        <button class="btns">EXPLORE OUR PRODUCTS</button>
+      </div>
+    </div>
+
+   
+    <div class="trustss">
+      <img src="ac.jpg" alt="Cooling Solution" />
+    </div>
+    
+
+    <div class="about">
+      <div class="about-left">
+        <h3>ABOUT US</h3>
+        <h2>Cool Technologies</h2>
+    </div>
+    <div class="about-right">
+        <p>Founded in the Emirate of Abu Dhabi in 2012, Cool Technologies have emerged to be one of the leading suppliers of industrial cooling equipment in the UAE for the past 10 years.</p>
+        <a href="#" class="know-more">KNOW MORE →</a>
+    </div>
+    </div>
+
+   
+    <div class="carousel">
+      <img
+        src="ac-mechanic.jpg"
+        alt="Image 1"/>
+      <img
+        src="aa.jpeg"
+        alt="Image 2"/>
+      <img
+        src="ac.jpg"
+        alt="Image 3"/>
+    </div>
+
+   
+    
+    <div class="services">
+      <div class="servicess">
+        <h3>OUR SERVICES</h3>
+        <h2>Professional Services Tailored for You</h2>
+      </div>
+      <div class="service-content">
+        <div class="left">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <div class="service-buttons">
+            <button>Installation of Air Conditioning</button>
+            <button>Maintenance</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="service-item">
+            <img
+              src="https://via.placeholder.com/300x200?text=Window+AC"
+              alt="Window Air Conditioning"
+            />
+            <h3>Window Air Conditioning</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://via.placeholder.com/300x200?text=Split+AC"
+              alt="Split Air Conditioning"
+            />
+            <h3>Split Air Conditioning</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://via.placeholder.com/300x200?text=Package+Unit"
+              alt="Package Unit"
+            />
+            <h3>Package Unit</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="service-item">
+            <img
+              src="https://via.placeholder.com/300x200?text=Ducted+Split+AC"
+              alt="Ducted Split Air Conditioning"
+            />
+            <h3>Ducted Split Air Conditioning</h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="timeline">
+      <h2>Highlights of Our Journey</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <h3>2012</h3>
+          <p>Established</p>
+          <p>Lorem ipsum dolor sit amet, conse tetur sadip aliqua.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2014</h3>
+          <p>Introduced Cooltech</p>
+          <p>Brand water cooler and chillers with dealership.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>2015</h3>
+          <p>Started doing high-end projects</p>
+          <p>Laboratories, Villas, and Campus.</p>
+        </div>
+      </div>
+    </div>
+ </body>
+</html>

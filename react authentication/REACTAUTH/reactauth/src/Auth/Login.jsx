@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { loginApi } from '../ap/api'
 
 export const Login = () => {
 
@@ -12,7 +13,21 @@ export const Login = () => {
         setlogin({ ...login, [event.target.name]: event.target.value })
     }
 
-    console.log(login);
+    const handlesubmit=async(e)=>{ 
+        e.preventDefault()
+        try {
+            const res=await loginApi(login)
+            console.log(res);
+            if(res?.status === 201){
+                alert('login succesful...!!!')
+            }else if(res?.status === 401){
+                alert('incorrect credentials...!!!')
+            }
+        } catch (error) {
+            console.log("error",error);
+        }
+    }
+    
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-teal-500">
@@ -46,6 +61,7 @@ export const Login = () => {
                         <button
                             type="submit"
                             className="w-full px-4 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-200"
+                            onClick={handlesubmit}
                             >
                             Login
                         </button>

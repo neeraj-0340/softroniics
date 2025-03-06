@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            padding: 10px;
+        }
+        .invoice-header {
+            background-color: black;
+            color: white;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 14px;
+        }
+        .invoice-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .invoice-info {
+            text-align: right;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .business-details {
+            text-align: center;
+            border: 2px solid black;
+            padding: 4px 0;
+        }
+        .business-details h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .business-details p {
+            font-size: 18px;
+            margin: 2px 0;
+        }
+        .bill-section {
+            display: flex;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        .bill-to, .payment-info {
+            padding: 10px;
+            width: 50%;
+        }
+        .payment-info {
+            border-left: 2px solid black;
+            display: flex;
+            align-items: center;
+        }
+        .table-header, .table-body {
+            display: flex;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        .table-header div, .table-body div {
+            padding: 4px;
+            border-right: 2px solid black;
+            text-align: center;
+        }
+        .table-header div:last-child, .table-body div:last-child {
+            border-right: none;
+        }
+        .desc { width: 50%; }
+        .hsn, .qty, .rate, .amount { width: 12.5%; }
+        .table-body {
+            height: 320px;
+        }
+        .terms-section {
+            display: flex;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        .terms, .totals {
+            width: 50%;
+            padding: 10px;
+        }
+        .totals p {
+            margin: 2px 0;
+        }
+        .totals .grand-total {
+            background-color: black;
+            color: white;
+            padding: 4px;
+        }
+        .total-amount {
+            padding: 4px;
+            text-decoration: underline;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        .signature-section {
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 4px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="invoice-header">
+        <div></div>
+        <div class="invoice-title">TAX INVOICE</div>
+        <div class="invoice-info">
+            <p>Invoice No. 1234</p>
+            <p>Invoice Date: 04-03-2022</p>
+        </div>
+    </div>
+
+    <div class="business-details">
+        <h1>BUSINESS NAME</h1>
+        <p>132 Street City, State, PIN</p>
+        <p>GSTIN: AA2134465</p>
+        <p>Email: 122@gmail.com</p>
+        <p>PAN NO: AAA123456</p>
+    </div>
+
+    <div class="bill-section">
+        <div class="bill-to">
+            <h3>BILL TO:</h3>
+            <p>PARTY'S NAME</p>
+            <p>ADDRESS</p>
+            <p>132 STREET, CITY, STATE - 123456</p>
+            <p>Email ID: abc@gmail.com</p>
+        </div>
+        <div class="payment-info">
+            <p>Payment Due Date | Payment Mode</p>
+        </div>
+    </div>
+
+    <div class="table-header">
+        <div class="desc">Description</div>
+        <div class="hsn">HSN Code</div>
+        <div class="qty">Qty</div>
+        <div class="rate">Rate</div>
+        <div class="amount">Amount</div>
+    </div>
+
+    <div class="table-body">
+        <div class="desc"></div>
+        <div class="hsn"></div>
+        <div class="qty"></div> 
+        <div class="rate"></div>
+        <div class="amount"></div>
+    </div>
+
+    <div class="terms-section">
+        <div class="terms">
+            <p>Term & Conditions</p>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+            <p>5.</p>
+        </div>
+        <div class="totals">
+            <p>ADD: CGST @ 14%</p>
+            <p>ADD: SGST @ 14%</p>
+            <p>Balance Received:</p>
+            <p>Balance Due:</p>
+            <p class="grand-total">Grand Total</p>
+        </div>
+    </div>
+
+    <div class="total-amount">
+        <p>Total Amount (in words):</p>
+    </div>
+
+    <div class="signature-section">
+        <div>For: Business Name</div>
+        <div>Authorized Signatory</div>
+    </div>
+</div>
+
+</body>
+</html>

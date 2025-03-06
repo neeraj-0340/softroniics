@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Technologies</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            color: #222;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 80px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .cta-button {
+            background-color: transparent;
+            border: 1px solid black;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: left;
+            padding: 50px 80px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #555;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid black;
+            color: black;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* Hero Image */
+        .hero-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .hero img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            padding: 50px 80px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about-left {
+            flex: 1;
+        }
+
+        .about-right {
+            flex: 2;
+        }
+
+        .about h3 {
+            font-size: 14px;
+            color: #007bff;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 16px;
+            color: #555;
+            max-width: 600px;
+        }
+
+        .about .know-more {
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: black;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x40" alt="Cool Technologies Logo">
+            COOL TECHNOLOGIES
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button">LET'S TALK</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Trusted Partner In Cooling Solution</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="btn-group">
+            <button class="btn">LET'S TALK</button>
+            <button class="btn-outline">EXPLORE OUR PRODUCTS</button>
+        </div>
+    </section>
+
+    <!-- Hero Image -->
+    <div class="hero-container">
+        <img src="https://via.placeholder.com/700x400" alt="Cooling Solution">
+    </div>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-left">
+            <h3>ABOUT US</h3>
+            <h2>Cool Technologies</h2>
+        </div>
+        <div class="about-right">
+            <p>Founded in the Emirate of Abu Dhabi in 2012, Cool Technologies have emerged to be one of the leading suppliers of industrial cooling equipment in the UAE for the past 10 years.</p>
+            <a href="#" class="know-more">KNOW MORE →</a>
+        </div>
+    </section>
+
+</body>
+</html>

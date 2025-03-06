@@ -40,6 +40,7 @@ import { Formview } from './backendconnect/Formview.jsx';
 import { Formdelete } from './backendconnect/Formdelete.jsx';
 import Login1 from './backendconnect/Login1.jsx';
 import { Profile } from './backendconnect/Profile.jsx';
+import { Taxinvoice } from './Taxinvoice.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -77,6 +78,7 @@ root.render(
       <Route path="/calculator" element={<Calculator/>}></Route>
       <Route path="/flipkart" element={<Flipkart/>}></Route>
       <Route path="/cart" element={<Cart/>}></Route>
+      <Route path="/taxinvoice" element={<Taxinvoice/>}></Route>
     </Routes>
     </BrowserRouter>
     </Provider>

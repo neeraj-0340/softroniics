@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const size=parseInt(prompt("enter the size of the array :"));
+
+        if (isNaN(size) || size < 0) {
+            alert("enter a valid array size.");
+        }
+        else{
+            let arr1=prompt("enter array elements seperated by commas.").split(",").map(Number);
+
+
+            if (arr1.length !== size) {
+                alert("array size incorrect");
+            }
+            else{
+                let evencounnt=0;
+                for (let i = 0; i < size; i++) {
+                    if (arr1[i]%2 == 0) {
+                        evencounnt++;
+                    }
+                }
+                document.write(`total number of even number : ${evencounnt}`);
+            }
+        }
+    </script>
+    
+</body>
+</html>
